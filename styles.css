@@ -1,0 +1,75 @@
+.prompt-refiner-button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+    margin-right: 8px;
+  }
+  
+  .prompt-refiner-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  }
+  
+  .prompt-refiner-button:active {
+    transform: translateY(0);
+  }
+  
+  .prompt-refiner-button.processing {
+    opacity: 0.8;
+    cursor: wait;
+  }
+  
+  .prompt-refiner-button svg {
+    flex-shrink: 0;
+  }
+  
+  .prompt-refiner-button .spinner {
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
+  .prompt-refiner-notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 14px 20px;
+    border-radius: 8px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    z-index: 10000;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 0.3s ease;
+  }
+  
+  .prompt-refiner-notification.show {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .prompt-refiner-notification.success {
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+  }
+  
+  .prompt-refiner-notification.error {
+    background: linear-gradient(135deg, #eb3349 0%, #f45c43 100%);
+  }
+  
+  .prompt-refiner-notification.warning {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  }

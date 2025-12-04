@@ -4,8 +4,7 @@
     "version": "1.0",
     "description": "Refine your AI prompts by adding Memory to your conversations",
     "permissions": [
-      "storage",
-      "identity"
+      "storage"
     ],
     "host_permissions": [
       "https://chatgpt.com/*",
@@ -32,13 +31,6 @@
     ],
     "background": {
       "service_worker": "background.js"
-    },
-    "oauth2": {
-      "client_id": "680097659940-jq42gfcthfc9lqhlrladut7tnamtl7c4.apps.googleusercontent.com",
-      "scopes": [
-        "https://www.googleapis.com/auth/userinfo.email",
-        "https://www.googleapis.com/auth/userinfo.profile"
-      ]
     },
     "action": {
       "default_popup": "popup.html"

@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Mem2AI",
-    "version": "1.1",
+    "version": "1.2",
     "description": "Refine your AI prompts by adding Memory to your conversations",
     "permissions": [
       "storage"
@@ -11,7 +11,10 @@
       "https://claude.ai/*",
       "https://gemini.google.com/*",
       "https://www.perplexity.ai/*",
-      "https://www.googleapis.com/*"
+      "https://www.googleapis.com/*",
+      "https://mem2ai.com/*",
+      "https://www.mem2ai.com/*",
+      "https://optimus.mem2ai.com/*"
     ],
     "content_scripts": [
       {
@@ -19,7 +22,10 @@
           "https://chatgpt.com/*",
           "https://claude.ai/*",
           "https://gemini.google.com/*",
-          "https://www.perplexity.ai/*"
+          "https://www.perplexity.ai/*",
+          "https://mem2ai.com/*",
+          "https://www.mem2ai.com/*",
+          "https://optimus.mem2ai.com/*"
         ],
         "js": ["content.js"],
         "css": ["styles.css"]
